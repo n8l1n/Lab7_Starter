@@ -20,7 +20,7 @@ Nathan Lin
 
     **Based on the lighthouse results, some nice improvements would be to**
    - Add a `[lang]` attribute to the `<html>` elements. Screen readers will currently assume that the page is in the user's default screen reader language which may result in a page's text being incorrectly announced.
-   - Lighthouse says that `issues` were logged in Chrome Devtools. Specificially, it says "Content Security Policy of your site blocks the use of 'eval' in Javascript." This is a security feature blocking "injection sinks" from running which bars people from running unauthorized scripts.
+   - Lighthouse says that `issues` were logged in Chrome Devtools. Specificially, it says "Content Security Policy of your site blocks the use of 'eval' in Javascript." This is a security feature blocking "injection sinks" from running which bars people from running unauthorized scripts. To fix this issue, we can either remove the code that is deemed unsafe, or explicitely permit it.
    - Lighthouse says "Document does not have a meta description" which are included in search results to concisely summarize page content. The HTML can be formatted in a way that is easier for crawlers to read.
 
 
