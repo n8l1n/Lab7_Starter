@@ -19,8 +19,8 @@ Nathan Lin
 4) Name three things we could do to improve the CSE 110 shop site based on the Lighthouse results.
 
     **Based on the lighthouse results, some nice improvements would be to**
-   - Optimize viewport for mobile: Lighthouse reports that tap interactions may be delayed by up to 300 ms if the viewport is not optimized for mobile. Although that delay may sound minimal, it the user will likely feel the delay which affects the user experience on the website.
-   - There are many reports of unused/duplicate code (Duplicated JavaScript, Reduce unused CSS, Reduce unused JavaScript): So it can be a great idea to go through and clean out unused lines to reduce unnecessary bytes consumed by network activity.
-   - Accessibility (Buttons have an accessible name, Input buttons have discernible text): Lighthouse reports that some of the elements on the page, such as buttons but be unusable by users who rely on screen readers (The button's name/purpose is not clear). 
+   - Add a `[lang]` attribute to the `<html>` elements. Screen readers will currently assume that the page is in the user's default screen reader language which may result in a page's text being incorrectly announced.
+   - Lighthouse says that `issues` were logged in Chrome Devtools. Specificially, it says "Content Security Policy of your site blocks the use of 'eval' in Javascript." This is a security feature blocking "injection sinks" from running which bars people from running unauthorized scripts.
+   - Lighthouse says "Document does not have a meta description" which are included in search results to concisely summarize page content. The HTML can be formatted in a way that is easier for crawlers to read.
 
 
